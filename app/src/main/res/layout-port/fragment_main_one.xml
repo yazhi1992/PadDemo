@@ -6,7 +6,7 @@
 
     <Button
         android:id="@+id/btn_fragment_one"
-        android:text="跳转 4"
+        android:text="跳转子页面1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

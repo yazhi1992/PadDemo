@@ -75,7 +75,7 @@ public class MainActivity extends BaseActivity {
         Fragment addOne = null;
         switch (event.getName()) {
             case Constant.CHILD_FRAGMENT_1:
-                addOne = MainFragment.getInstance("子fragment");
+                addOne = MainFragment.getInstance("子页面1");
                 break;
             default:
                 break;

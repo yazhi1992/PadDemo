@@ -25,7 +25,7 @@
                 android:layout_weight="1"
                 android:background="@color/blue"
                 android:gravity="center"
-                android:text="一竖"
+                android:text="一"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 />
