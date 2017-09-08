@@ -2,24 +2,32 @@ package com.yazhi1992.paddemo;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
+import org.greenrobot.eventbus.EventBus;
+
 import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
 
 /**
  * Created by zengyazhi on 2017/9/7.
  */
 
-public class MainFragment extends BaseFragment {
+public class MainOneFragment extends BaseFragment {
     @BindView(R.id.tv_main_fragment)
     TextView mTvMainFragment;
     private String mTitle;
 
-    public static MainFragment getInstance(String title) {
+    public static MainOneFragment getInstance(String title) {
         Bundle bundle = new Bundle();
         bundle.putString(Constant.FRAGMENT_TITLE, title);
-        MainFragment mainFragment = new MainFragment();
+        MainOneFragment mainFragment = new MainOneFragment();
         mainFragment.setArguments(bundle);
         return mainFragment;
     }
@@ -41,10 +49,15 @@ public class MainFragment extends BaseFragment {
 
     @Override
     int initLayoutId() {
-        return R.layout.fragment_main;
+        return R.layout.fragment_main_one;
     }
 
     public String getTitle() {
         return mTitle;
+    }
+
+    @OnClick(R.id.btn_fragment_one)
+    public void onViewClicked() {
+        EventBus.getDefault().post(new StartFragmentEvent(Constant.CHILD_FRAGMENT_1));
     }
 }

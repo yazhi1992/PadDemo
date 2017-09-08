@@ -56,18 +56,19 @@
 
         </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/container_main2"
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_main"
+            android:background="@color/default_color_d"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            ></FrameLayout>
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
 
     </LinearLayout>
 
     <FrameLayout
-        android:id="@+id/container_main3"
+        android:id="@+id/container_second"
         android:visibility="gone"
+        android:background="@color/blue"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         ></FrameLayout>

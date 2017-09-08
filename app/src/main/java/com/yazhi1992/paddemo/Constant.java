@@ -6,4 +6,8 @@ package com.yazhi1992.paddemo;
 
 public class Constant {
     public static final String FRAGMENT_TITLE = "FRAGMENT_TITLE";
+
+    public static final String CHILD_FRAGMENT_1 = "CHILD_FRAGMENT_1";
+
+    public static final String BOOLEAN_SHOW_FRAMELAYOUT = "BOOLEAN_SHOW_FRAMELAYOUT";
 }
